@@ -133,7 +133,9 @@
     
     <sub-heading>3.2.1 Choosing a Model Type</sub-heading><br>
     <custom-spacing>The ANSYS model may be categorized as 2-D or 3-D, and as composed of point elements, line elements, area elements, or solid elements. Of course, the analyst can mix different kinds of elements (Fig. 3.1) as required. For example, the analyst might model a stiffened shell structure using 3-D shell elements to represent the skin and 3-D beam elements to represent the ribs.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image1.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.1 Different types of elements</image-tag>
     
     <custom-spacing><custom-style>LINE</custom-style> models can represent 2-D or 3-D beam or pipe structures, as well as 2-D models of 3-D axisymmetric shell structures. Solid modeling usually does not offer much benefit for generating line models; they are more often created by direct generation methods.</custom-spacing><br>
@@ -143,14 +145,18 @@
     
     <sub-heading>3.2.2 Choosing Between Linear and Higher Order Elements</sub-heading><br>
     <custom-spacing>The ANSYS program's element library includes two basic types of area and volume elements: <custom-style>linear</custom-style> and <custom-style>quadratic</custom-style>. These basic element types are represented schematically in Fig. 3.2. Look at some of the points involved in selecting between these two basic element types:</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image2.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.2 Area and Volume Types</image-tag>
     <custom-spacing>(a) Linear isoparametric (b) Linear isoparametric with extra shapes (c) Quadratic</custom-spacing>
     
     <sub-heading>3.2.2.1 Linear Elements</sub-heading><br>
     <custom-spacing>For structural analyses, the corner node elements with extra shape functions will often yield an accurate solution. When using these elements, it is essential to avoid their degenerate forms. That is, avoid using the triangular form of 2-D linear elements and the wedge or tetrahedral forms of 3-D linear elements. Also take care to avoid using excessively distorted linear elements.</custom-spacing><br>
     <custom-spacing>In <custom-style>nonlinear</custom-style> structural analyses, better accuracy can be obtained at less cost by using a fine mesh rather than a comparable coarse mesh of quadratic elements. Examples of (a) linear and (b) quadratic elements are shown in Fig. 3.3.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image3.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.3 Comparable Grids</image-tag>
     
     <custom-spacing>When modeling a curved shell, choose between using curved or flat shell elements. Each option has its own pros and cons. The majority of problems can be solved to a high degree of accuracy in a minimum amount of computer time with flat elements. Take care to ensure that enough flat elements are used to model the curved surface satisfactorily. Obviously, the smaller the element, the higher will be the accuracy.</custom-spacing><br>
@@ -175,7 +181,9 @@
     
     <sub-heading>3.3.1.1 Global Coordinate Systems</sub-heading><br>
     <custom-spacing>A global coordinate system (Fig. 3.4) can be thought of as an absolute reference frame. Three predefined global systems are available: <custom-style>Cartesian</custom-style>, <custom-style>cylindrical</custom-style>, and <custom-style>spherical</custom-style>. All three of these systems are right-handed and, by definition, share the same origin. They are identified by their coordinate system (CS) numbers: 0 for Cartesian, 1 and 5 for cylindrical, and 2 for spherical.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image4.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.4 Global Coordinate Systems</image-tag>
     <custom-spacing>(a) Cartesian (X, Y, Z components) coordinate system 0 (C.S.0)<br>(b) Cylindrical (R, θ, Z components) coordinate system 1 (C.S.1)<br>(c) Spherical (R, θ, φ components) coordinate system 2 (C.S.2)<br>(d) Cylindrical (R, θ, Y components) coordinate system 5 (C.S.5)</custom-spacing>
     
@@ -189,7 +197,9 @@
     </ul>
     <custom-spacing>When a local coordinate system is defined, it becomes the active coordinate system. As a local system is created, assign it a CS identification number (which must be 11 or greater). Local coordinate systems can be created or deleted in any phase of the ANSYS session. Use <custom-process>Utility Menu> WorkPlane> Local Coordinate Systems> Delete Local CS</custom-process> to delete a local system. Use <custom-process>Utility Menu> List> Other> Local Coord Sys</custom-process> to view the status of all global and local coordinate systems.</custom-spacing><br>
     <custom-spacing>The local coordinate systems can be Cartesian, cylindrical, or spherical, similar in form to the three predefined global systems. The analyst may define local cylindrical and spherical coordinate systems in either circular or elliptical configuration. Additionally, a <custom-style>toroidal</custom-style> local coordinate system can be defined, as illustrated in Fig. 3.5.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image5.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.5 Types of Coordinate System</image-tag>
     
     <sub-heading>3.3.1.3 Active Coordinate System</sub-heading><br>
@@ -229,7 +239,9 @@
     
     <custom-heading level="2">3.4 Working Planes</custom-heading><br>
     <custom-spacing>Although the cursor appears as a <custom-style>point</custom-style> on the screen, it actually represents a <custom-style>line</custom-style> through space, normal to the screen. In order to be able to pick a <custom-style>point</custom-style> with the cursor, it is necessary to define an imaginary plane that, when intersected by the normal line of the cursor, will yield a unique point in space. This imaginary plane is called a <custom-style>working plane</custom-style> (Fig. 3.6). Another way to consider the interaction between the cursor and the working plane is to picture the cursor as a point that moves around <custom-style>on the working plane</custom-style>. The working plane, then, acts as a ‘tablet’ on which the analyst writes with the cursor.</custom-spacing>
-
+    <custom-spacing><div class="container-1">
+        <span><img src="image6.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.6 Relationships among Display Screen, Cursor, Working Plane, and Picked Point</image-tag>
     <custom-spacing>A working plane is an infinite plane with an origin, a 2-D coordinate system, a <custom-style>snap increment</custom-style>, and a <custom-style>display grid</custom-style>. Only one working plane can be defined at a time. Creating a new working plane eliminates the existing working plane. The working plane is separate from the coordinate systems; for example, the working plane can have a different point of origin and rotation than the active coordinate system.</custom-spacing>
     
@@ -270,7 +282,10 @@
     </ul>
     <custom-spacing>All geometry is created with respect to the working plane, which by default is aligned with the global Cartesian coordinate system. The ‘Working Plane’ is actually the XY plane of the working coordinate system. The working coordinate system ID is coordinate system 4 in ANSYS. Global Cartesian is ID 0, Global Cylindrical is ID 1, and Global Spherical is ID 2.</custom-spacing><br>
     <custom-spacing>Turn on the working plane using <custom-process>Utility Menu> WorkPlane> Display Working Plane</custom-process>. Change the way the working plane looks or adjust the snap settings under <custom-process>Utility Menu> WorkPlane> WP Settings…</custom-process>. Move the working plane around using <custom-process>Utility Menu> WorkPlane> Offset WP to…</custom-process>. Align the working plane with various parts of the model using <custom-process>Utility Menu> WorkPlane> Align WP with…</custom-process>. If more than one node or keypoint is selected to offset the working plane to, it will go to the average location of the selected entities. The working plane can be used to slice and dice the model. For example to cut an area in pieces use <custom-process>Main Menu> Modeling> Operate> Booleans> Divide> Area by WrkPlane</custom-process>.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image7.jpg" alt="image" width="300px"></span>
+        <span><img src="image8.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.7 Working Plane</image-tag>
     
     <custom-heading level="2">3.5 Solid Modeling</custom-heading><br>
@@ -278,31 +293,45 @@
     
     <sub-heading>3.5.1 Solid Modeling Operations</sub-heading><br>
     <custom-spacing>The points that define the vertices of the model are called <custom-style>keypoints</custom-style> and are the ‘lowest-order’ solid model entities. If, in building the solid model, the analyst first creates the keypoints, and then uses those keypoints to define the ‘higher-order’ solid model entities, the model is said to be built ‘from the bottom up’ (Fig. 3.8). Models built from the bottom up are defined within the currently active coordinate system.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image9.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.8 Bottom Up Construction</image-tag>
     
     <custom-spacing>The ANSYS program also gives the analyst the ability to assemble the model using <custom-style>geometric primitives</custom-style>, which are fully-defined lines, areas, and volumes. As a primitive is created, the program automatically creates all the ‘lower’ entities associated with it. If the modeling effort <custom-style>begins</custom-style> with the ‘higher’ primitive entities, the model is said to be built ‘from the top down.’ Bottom up and top down modeling techniques can be freely combined, as appropriate, in any model. Remember that geometric primitives (Fig. 3.9) are built within the working plane while bottom up techniques are defined against the active coordinate system.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image10.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.9 Top Down Constructions (Primitives)</image-tag>
     
     <custom-spacing><b>Using Boolean operators:</b> The analyst can ‘sculpt’ the solid model using intersections, subtractions, and other Boolean operations (Fig. 3.10). Booleans allow to work directly with higher solid model entities to create complex shapes. Both bottom up and top down creations can be used in Boolean operations.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image11.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.10 Create Complex Shapes With Boolean Operations</image-tag>
     
     <custom-spacing><b>Dragging and rotating:</b> Boolean operators, although convenient, can be computationally costly. Sometimes a model can be constructed more efficiently by dragging (Fig. 3.11) or rotating.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image12.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.11 Dragging an Area to Create a Volume</image-tag>
     
     <custom-spacing><b>Moving and copying solid model entities:</b> A complicated area or volume that appears repetitively in the model need only be constructed once; it can then be moved, rotated, and copied (Fig. 3.12) to a new location on the model. It might be more convenient to place geometric primitives in their proper location by moving them, rather than by changing the working plane.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image13.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.12 Copying an Area</image-tag>
     
     <custom-spacing><b>Meshing:</b> The ultimate objective in building a solid model is to <custom-style>mesh</custom-style> (Fig. 3.13) that model with nodes and elements. First complete the solid model, set element attributes, and establish meshing controls. Then turn the ANSYS program free to generate the finite element mesh. A ‘mapped’ mesh containing all quadrilateral, all triangular, or all brick elements can be requested by taking care to meet certain requirements.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image14.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.13 Free and Mapped Meshes</image-tag>
     
     <custom-spacing><b>Moving and copying nodes and elements:</b> Automatic meshing is a vast improvement over direct generation of nodes and elements, but it can sometimes be computationally time consuming. If the model contains repetitive features, the most efficient approach to model generation would be to model and mesh a pattern region of the model and then generate copies (Fig. 3.14) of that meshed region.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image15.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.14 Copying a Meshed Area</image-tag>
     
     <custom-spacing><b>Solid model loads:</b> In the ANSYS program, loads are normally associated with nodes and elements. However, using solid modeling, it is inconvenient to define loads at nodes and elements. Fortunately, loads may be assigned directly to the solid model. When the solution calculations are initiated, the program will automatically transfer these solid model loads to the finite element model.</custom-spacing><br>
@@ -316,12 +345,16 @@
         <li><b>Lowest</b> Keypoints (and Solid-Model Point Loads)
     </ul>
     <custom-spacing>If it is necessary to revise (Fig. 3.15) a solid model after it has been meshed, first delete all the nodes and elements in the portion of the model to be revised, using <custom-process>Main Menu> Preprocessor> Meshing> Clear</custom-process>. Solid model entities can be deleted and redefined after clearing the solid model. As an alternative to clearing, deleting, and redefining, consider modifying the keypoints directly, using: <custom-process>Main Menu> Preprocessor> Modeling> Move/Modify> Keypoints> Set of KPs</custom-process> or <custom-process>Main Menu> Preprocessor> Modeling> Move/Modify> Keypoints> Single KP</custom-process>.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image16.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.15 Revising a Meshed Solid Model</image-tag>
     
     <sub-heading>3.5.2 Creating the Solid Model from the Bottom Up</sub-heading><br>
     <custom-spacing>Any solid model, whether assembled from the bottom up or from the top down, is defined in terms of keypoints, lines, areas, and volumes. Figure 3.16 illustrates these entities.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image17.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.16 Basic Solid Model Entities</image-tag>
     
     <custom-spacing>Geometry in ANSYS is created from <custom-process>Main Menu> Preprocessor> Modeling> Create</custom-process> and has the following terminology (Fig. 3.17),</custom-spacing><br>
@@ -332,7 +365,9 @@
     <custom-spacing><b>Solid model:</b> In most packages this would refer to the volumes only, but in ANSYS this refers to the geometry. Any geometry, for example, a line is considered a ‘solid model’. A child entity cannot be deleted without deleting its parent, in other words a line cannot be deleted if it’s a part of an area, can’t delete a keypoint if it’s the end point of a line, etc.</custom-spacing><br>
     <custom-spacing>Keypoints are the vertices, lines are the edges, areas are the faces, and volumes are the interior of the object. Notice that there is a hierarchy in these entities: volumes, the highest-order entities, are bounded by areas, which are bounded by lines, which in turn are bounded by keypoints.</custom-spacing><br>
     <custom-spacing>In bottom up construction, first create keypoints and use those keypoints to define higher-order solid model entities (Fig. 3.17).</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image18.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.17 Bottom up construction</image-tag>
     
     <sub-heading>3.5.2.1 Keypoints</sub-heading><br>
@@ -426,7 +461,9 @@
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Intersect> Common> Areas</custom-process> to create the intersection of areas.
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Intersect> Common> Volumes</custom-process> to create the intersection of volumes.
     </ul>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image19.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.18 Intersect operation</image-tag>
     
     <sub-heading>3.5.4.2 Add</sub-heading><br>
@@ -435,7 +472,9 @@
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Add> Areas</custom-process> to add separate areas to create a single area.
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Add> Volumes</custom-process> to add separate volumes to create a single volume.
     </ul>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image20.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.19 Add operation</image-tag>
     
     <sub-heading>3.5.4.3 Subtract</sub-heading><br>
@@ -444,7 +483,9 @@
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Subtract> Lines</custom-process> or <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Subtract> With Options> Lines</custom-process> to subtract lines from lines
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Subtract> Areas</custom-process> or <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Subtract> With Options> Areas</custom-process> to subtract areas from areas.
     </ul>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image21.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.20 Subtract operation</image-tag>
     
     <sub-heading>3.5.4.4 Overlap</sub-heading><br>
@@ -454,7 +495,9 @@
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Overlap> Lines</custom-process> to overlap lines
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Overlap> Areas</custom-process> to overlap areas.
     </ul>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image22.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.21 Overlap operation</image-tag>
     
     <sub-heading>3.5.4.5 Partition</sub-heading><br>
@@ -463,7 +506,9 @@
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Partition> Lines</custom-process> to partition lines.
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Partition> Areas</custom-process> to partition areas.
     </ul>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image23.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.22 Partition operation</image-tag>
     
     <sub-heading>3.5.4.6 Glue (or Merge)</sub-heading><br>
@@ -472,12 +517,16 @@
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Glue> Lines</custom-process> to glue lines by ‘gluing’ lines.
         <li>Use <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Glue> Areas</custom-process> to glue areas by ‘gluing’ areas.
     </ul>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image24.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.23 Glue operation</image-tag>
     
     <sub-heading>3.5.4.7 Divide</sub-heading><br>
     <custom-spacing>Divides an entity into two or more entities (Fig. 3.24).</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image25.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.24 Divide operation</image-tag>
     
     <sub-heading>3.5.5 Updating after Boolean Operations</sub-heading><br>
@@ -486,12 +535,17 @@
     <sub-heading>3.5.6 Moving and Copying Solid Model Entities</sub-heading><br>
     <custom-spacing>If the model repetitively uses a relatively complicated area or volume, it is necessary to construct that part only once. Then copies of that part can be generated in new locations and new orientations as needed.</custom-spacing><br>
     <custom-spacing>Move translates or rotates an entity by specifying DX,DY,DZ offsets (Fig. 3.25). DX,DY,DZ are interpreted in the active CS. To translate an entity, make the active CS Cartesian. To rotate an entity, make the active CS cylindrical or spherical. Another option is to transfer coordinates to a different system.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image26.jpg" alt="image" width="210px"></span>
+        <span><img src="image27.jpg" alt="image" width="220px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.25 Moving an area</image-tag>
     
     <custom-spacing>Geometric primitives can also be considered to be ‘parts’. As geometric primitives are created, their location and orientation will be determined by the current working plane. Because it is not always particularly convenient to redefine the working plane for each new primitive that is created, it is more practical to allow a primitive to be created at the ‘wrong’ location, and then <custom-style>move</custom-style> that primitive to its correct position. Of course, this operation is not limited to geometric primitives: <custom-style>any</custom-style> solid model entity can be copied or moved.</custom-spacing><br>
     <custom-spacing>Copy generates multiple copies of an entity. Specify the number of copies (2 or greater) and the DX,DY,DZ offset for each copy. DX,DY,DZ are interpreted in the active CS. It is useful to create multiple holes, ribs, protrusions, etc. (Fig. 3.26).</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image28.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.26 Copying an Area</image-tag>
     
     <sub-heading>3.5.6.1 Generating Entities from a Pattern</sub-heading><br>
@@ -532,7 +586,9 @@
         <li><b>About axis</b> — creates volume by revolving areas about an axis (specified by two keypoints).
         <li><b>Along lines</b> — creates volume by ‘dragging’ areas along a line or a set of contiguous lines.
     </ul>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image29.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.27 Extrude operation</image-tag>
     
     <sub-heading>3.5.7.2 Reflect</sub-heading><br>
@@ -543,17 +599,24 @@
         <li>Z for XY plane
     </ul>
     <custom-spacing>All directions are interpreted in the active CS, which must be a Cartesian system.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image30.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.28 Reflect Operation</image-tag>
     
     <sub-heading>3.5.7.3 Merge</sub-heading><br>
     <custom-spacing>Merge attaches two entities together by removing coincident keypoints (Fig. 3.29). Observe the removal of coincident keypoints on the centre line. Merging keypoints will automatically merge coincident higher-order entities, if any. This is usually required after a reflect, copy, or other operation that causes coincident entities.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image31.jpg" alt="image" width="250px"></span>
+        <span><img src="image32.jpg" alt="image" width="250px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.29 Merge operation</image-tag>
     
     <sub-heading>3.5.7.4 Fillet</sub-heading><br>
     <custom-spacing>Line fillet requires two intersecting lines with a common keypoint at the intersection (Fig. 3.30). If the common keypoint does not exist, do a partition operation first. ANSYS does not update the underlying area (if any), so either add or subtract the fillet region. Area filleting is similar.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image33.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.30 Fillet operation</image-tag>
     
     <custom-heading level="2">3.6 Importing Solid Models</custom-heading><br>
@@ -573,7 +636,9 @@
     <sub-heading>3.7.1 Free or Mapped Mesh</sub-heading><br>
     <custom-spacing>Before meshing the model, and even before building the model, it is important to think about whether a free mesh or a mapped mesh (Fig. 3.31) is appropriate for the analysis. A <custom-style>free</custom-style> mesh has no restrictions in terms of element shapes, and has no specified pattern applied to it. A <custom-style>mapped</custom-style> mesh is restricted in terms of the element shape it contains and the pattern of the mesh. A mapped area mesh contains either only quadrilateral or only triangular elements, while a mapped volume mesh contains only hexahedron elements. In addition, a mapped mesh typically has a regular pattern, with obvious rows of elements. To generate this type of mesh, build the geometry as a series of fairly regular volumes and/or areas that can accept a mapped mesh.</custom-spacing><br>
     <custom-spacing>A mapped mesh generates a very regular grid of elements. This can only be used on rectangular shaped areas or volumes. A free mesh will mesh any entity - regardless of shape.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image34.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.31 Free and Mapped Meshes</image-tag>
     
     <sub-heading>3.7.2 Setting Element Attributes</sub-heading><br>
@@ -600,11 +665,15 @@
     <sub-heading>3.7.3.1 The MeshTool</sub-heading><br>
     <custom-spacing>The MeshTool (<custom-process>Main Menu> Preprocessor> Meshing> MeshTool</custom-process>) provides a convenient path to many of the most common mesh controls, as well as to the most frequently performed meshing operations. The MeshTool (Fig. 3.32) is an interactive ‘tool box,’ not only because of the numerous functions that it contains, but also because once opened, it remains open until the analyst either closes it or exits PREP7.</custom-spacing><br>
     <custom-spacing>Although all of the functions available via the MeshTool are also available via the traditional commands and menus, using the MeshTool is a valuable shortcut.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image35.jpg" alt="image" width="150px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.32 Mesh Tool</image-tag>
     
     <custom-spacing>How fine of a mesh should be? Part of this is common sense. Put a finer mesh in areas of higher stress gradient, like near a stress concentration. Do simple experiments along with hand calculations; for example about 30 nodes are needed around a hole to get a good value of the peak stress. The stress convergence should follow a pattern as shown in Fig. 3.33. When the result is not changing much for a finer mesh, the mesh is converged.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image36.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.33 Stress convergence with mesh fineness</image-tag>
     
     <custom-spacing>If global attributes are set, that material, element type, real constant, beam section, etc. will be used for all elements in the model. It’s better to use the drop down to assign different attributes to different geometric entities in the model. Then mesh the whole model at one time.</custom-spacing><br>
@@ -636,7 +705,9 @@
     <sub-heading>3.7.3.6 Default Element Odds for Mapped Meshing</sub-heading><br>
     <custom-spacing>The <custom-style>default element size</custom-style> command allows the analyst to modify such defaults as: the minimum and maximum number of elements that will be attached to an unmeshed line, maximum spanned angle per element, and minimum and maximum edge length. This command (<custom-process>Main Menu> Preprocessor> Meshing> Size Cntrls> Global> Other</custom-process>) is always used to control element sizing for mapped meshing. The settings are also used by default for free meshing. However, it is recommended to use SmartSizing instead for free meshing operations.</custom-spacing><br>
     <custom-spacing>As an example, the mapped mesh on the left in Fig. 3.34 was produced with the element size defaults that exist when entering the program. The mesh on the right was produced by modifying the minimum number of elements (MINL) and the maximum spanned angle per element (ANGL).</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image37.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.34 Changing Default Element Sizes</image-tag>
     
     <sub-heading>3.7.3.7 Local Mesh Controls</sub-heading><br>
@@ -705,9 +776,13 @@
         <li>Use <custom-process>Main Menu> Preprocessor> Meshing> Modify Mesh> Refine At> Areas</custom-process> to refine around a selected set of areas.
     </ul>
     <custom-spacing>Figure 3.35 shows examples of mesh refinement around a node, element, keypoint, and line. Figure 3.36 illustrates the use of the command to perform tetrahedral mesh refinement around an area.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image38.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.35 Mesh Refinement Around a Node</image-tag>
-
+    <custom-spacing><div class="container-1">
+        <span><img src="image39.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.36 Tetrahedral Mesh Refinement Around an Area</image-tag>
 
     <sub-heading>3.8.1.3 Transfer of Attributes and Loads</sub-heading><br>
@@ -716,7 +791,9 @@
     
     <sub-heading>3.8.2 Keeping Track of Element Faces and Orientations</sub-heading><br>
     <custom-spacing>If the model contains shell elements, and if surface loads are applied, the analyst needs to keep track of the element faces in order to be able to define the proper direction for the loads. In general, shell surface loads will be applied to element face one, and will be positive in accordance with the right-hand rule (following the I, J, K, L nodal sequence, as illustrated in Fig. 3.37). If shell elements are created by meshing a solid model area, the normal direction of the elements will be consistent with the normal direction of the area. The area's normal direction can be determined by executing menu path <custom-process>Utility Menu> List> Areas</custom-process>; the direction of the sequence of lines defining that area will define the normal direction by the right-hand rule.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image40.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.37 Positive Normal Direction as Defined by the Right-Hand Rule</image-tag>
     
     <sub-heading>3.8.3 Revising a Meshed Model: Clearing and Deleting</sub-heading><br>
