@@ -838,7 +838,9 @@
         <li>Keypoints contained in lines may not be deleted.
     </ul>
     <custom-spacing>The basic reasoning behind these rules might be visualized from Fig. 3.38. Schematically, the completed model can be thought of as a stack of blocks, in which the bottommost block represents the keypoints, the next block represents lines, and so forth. If a lower entity was to be disturbed, the analyst would disturb the entities that are stacked on top of it. This illustration somewhat oversimplifies the dependence of higher level entities on lower entities.</custom-spacing>
-    
+    <custom-spacing><div class="container-1">
+        <span><img src="image41.jpg" alt="image" width="400px"></span>
+    </div></custom-spacing> 
     <image-tag>Fig. 3.38 Solid Model Cross-Reference Checking</image-tag>
     
     <custom-heading level="2">3.9 Direct Generation</custom-heading><br>
@@ -885,10 +887,13 @@
     <sub-heading>3.10.2 Element Reordering</sub-heading><br>
     <custom-spacing>At the start of a solution, the ANSYS program will automatically reorder the elements so that they can be accessed in close proximity to each other. This reordering scheme could improve the memory usage and, hence, the speed of the global assembly. This operation does not affect the element numbers used to identify elements in pre- and post-processing of the database. In most cases, allowing the ANSYS program to reorder elements automatically is the preferred approach. The original element ordering can be reestablished using: <custom-process>Main Menu> Preprocessor> Numbering Ctrls> Element Reorder> Reset Elem Order</custom-process>.</custom-spacing>
     
-    <custom-heading level="2">3.11 Problems</custom-heading><br>
+    <custom-heading level="2" style="color: green;">3.11 Problems</custom-heading><br>
     
-    <sub-heading>3.11.1 1-D Problems</sub-heading><br>
-    <custom-spacing><b>W1:</b> Consider a 2m long steel bar of 50mm² cross-sectional area as shown in figure below. Use two element mesh to model this problem.</custom-spacing><br>
+    <sub-heading style="color: green;">3.11.1 1-D Problems</sub-heading><br>
+    <custom-spacing style="color: red;"><b>W1:</b> Consider a 2m long steel bar of 50mm² cross-sectional area as shown in figure below. Use two element mesh to model this problem.</custom-spacing><br>
+    <custom-spacing><div class="container-1">
+        <span><img src="image42.jpg" alt="image" width="500px" height="190px"></span>
+    </div></custom-spacing> 
     <custom-spacing><b>Sol:</b></custom-spacing><br>
     <custom-spacing><b>Preprocessing</b></custom-spacing><br>
     <ol>
@@ -913,10 +918,15 @@
         <li><b>Create link elements between nodes</b><br>
             <custom-process>Preprocessor> Create> Elements> Auto Numbered> Thru Nodes</custom-process><br>
             A picking menu appears. Pick node 1, then node 2, and click on ‘Apply’ in the Picking Menu. Pick node 2, then node 3, and click on ‘OK’ in the Picking Menu.
-    </ol>
+    </ol><custom-spacing><div class="container-1">
+        <span><img src="image43.jpg" alt="image" width="400px" height="150"></span>
+    </div></custom-spacing> 
     
-    <sub-heading>3.11.2 2-D</sub-heading><br>
-    <custom-spacing><b>W2:</b> Mesh the three-sided area shown below with quad elements.</custom-spacing><br>
+    <sub-heading style="color: green;">3.11.2 2-D</sub-heading><br>
+    <custom-spacing style="color: red;"><b>W2:</b> Mesh the three-sided area shown below with quad elements.</custom-spacing><br>
+    <custom-spacing><div class="container-1">
+        <span><img src="image44.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <custom-spacing><b>Sol:</b></custom-spacing>
     <ol>
         <li><b>Open preprocessor menu</b><br>
@@ -936,10 +946,18 @@
             <custom-process>Meshing> MeshTool> Shape (Quad)> Mapped> Mesh</custom-process><br>
             Pick the area shown
     </ol>
+    <custom-spacing><div class="container-1">
+        <span><img src="image45.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <custom-spacing>Triangular elements can also be used to create the mesh.</custom-spacing><br>
     <custom-process>Meshing> MeshTool> Shape (Tri)> Mapped> Mesh</custom-process>
-    
-    <custom-spacing><b>W3:</b> Mesh the region shown below with two adjacent, but distinct areas with quad elements.</custom-spacing><br>
+    <custom-spacing><div class="container-1">
+        <span><img src="image46.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
+    <custom-spacing style="color: red;"><b>W3:</b> Mesh the region shown below with two adjacent, but distinct areas with quad elements.</custom-spacing><br>
+    <custom-spacing><div class="container-1">
+        <span><img src="image47.jpg" alt="image" width="300px"></span>
+    </div></custom-spacing> 
     <custom-spacing><b>Sol:</b></custom-spacing>
     <ol>
         <li><b>Open preprocessor menu</b><br>
@@ -954,21 +972,33 @@
             Define area-2 through keypoints 1,2,5,6.<br>
             Select keypoints 1,2,5 and 6 and then select ‘OK’.
         <li><b>Define the Type of Element</b><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image48.jpg" alt="image" width="300px"></span>
+            </div></custom-spacing> 
             <custom-process>Element Type> Add/Edit/Delete> Add> Solid> Quad 4 node 182</custom-process>
         <li><b>Mesh the areas</b><br>
             <custom-process>Meshing> Mesh> Areas> Mapped> 3 or 4 sided</custom-process><br>
             Pick the two areas shown.
     </ol>
     
-    <custom-spacing><b>W4:</b> Draw a rectangle of 50mmx10mm. Mesh (1x5) the area. Choose the element type as Solid Quad 4 node 182.</custom-spacing><br>
+    <custom-spacing style="color: red;"><b>W4:</b> Draw a rectangle of 50mmx10mm. Mesh (1x5) the area. Choose the element type as Solid Quad 4 node 182.</custom-spacing><br>
     <custom-spacing><b>Sol:</b></custom-spacing>
     <ol>
         <li><b>Create the area</b><br>
             <custom-process>Preprocessor> Create> Rectangle> By Dimensions</custom-process><br>
             Enter (0,50) for (X₁, X₂) and (0,10) for (Y₁, Y₂).
-        <li><b>Mesh the area</b><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image49.jpg" alt="image" width="400px"></span>
+            </div></custom-spacing> 
+            <custom-spacing><div class="container-1">
+                <span><img src="image50.jpg" alt="image" width="400px" height="200"></span>
+            </div></custom-spacing> 
+            <li><b>Mesh the area</b><br>
             <custom-process>Preprocessor> Mesh> Areas</custom-process><br>
             Pick the area just created and click ‘OK’<br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image51.jpg" alt="image" width="400px" height="200"></span>
+            </div></custom-spacing> 
             Notice that since element size and shape are not specified, ANSYS used its default values to generate the mesh. Since it is desired to use five elements, first clear the mesh and regenerate it after specifying ‘Element shape and size’.
         <li><b>Clear the area</b><br>
             <custom-process>Preprocessor>Clear> Areas</custom-process><br>
@@ -976,14 +1006,30 @@
         <li><b>Remesh the area</b><br>
             <b>Set element shape</b><br>
             <custom-process>Preprocessor> Element Type> Add/Edit/Delete> Add</custom-process><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image52.jpg" alt="image" width="400px"></span>
+            </div></custom-spacing> 
             <b>Set element size</b><br>
             <custom-process>Preprocessor> Size Cntrls> ManualSize> Lines> For Picked Lines</custom-process><br>
-            Not For All Lines because different number of divisions are necessary for different lines (i.e., 5 for horizontal lines and 1 for vertical lines). Pick two horizontal lines (lines 1 and 3). Enter 5 for No. of element divisions. Click ‘Apply’. Pick two vertical lines (lines 2 and 4). Enter 1 for No. of element divisions.<br>
+            Not For All Lines because different number of divisions are necessary for different lines (i.e., 5 for horizontal lines and 1 for vertical lines). Pick two horizontal lines (lines 1 and 3). Enter 5 for No. of element divisions. Click ‘Apply’.
+             Pick two vertical lines (lines 2 and 4). Enter 1 for No. of element divisions.<br>
             The screen should look something like this:<br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image53.jpg" alt="image" width="300px"></span>
+            </div></custom-spacing> 
+            <custom-spacing><div class="container-1">
+                <span><img src="image54.jpg" alt="image" width="250px" height="200"></span>
+            </div></custom-spacing> 
             <b>Plot Elements</b>
+            <custom-spacing><div class="container-1">
+                <span><img src="image55.jpg" alt="image" width="300px"></span>
+            </div></custom-spacing> 
     </ol>
     
-    <custom-spacing><b>W5:</b> Create the insignia shown below.</custom-spacing><br>
+    <custom-spacing style="color: red;"><b>W5:</b> Create the insignia shown below.</custom-spacing><br>
+    <custom-spacing><div class="container-1">
+        <span><img src="image56.jpg" alt="image" width="250px"></span>
+    </div></custom-spacing> 
     <custom-spacing><b>Sol:</b></custom-spacing><br>
     <custom-spacing><b>I. Cutlines Method</b></custom-spacing>
     <ol>
@@ -1015,12 +1061,21 @@
         <li>b. Select the area and click ‘OK’ in the 'Divide Area by Line' window<br>
                     c. Now select the lines and click ‘OK’ in the 'Divide Area by Line' window<br>
                     d. The area is now divided into 4 areas as shown in the figure below.<br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image58.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
                     <custom-spacing>Any time the analyst deletes/modifies items like elements, nodes, areas and tries to create some more, s/he will see that ANSYS doesn't number the entities starting from one. The concept of ‘Compressing the numbers’ will be used to tackle this problem. Then ANSYS is forced to start numbering from the next available number.</custom-spacing><br>
                     <custom-spacing>Ex: Suppose 1 area is created and for some reason the first one is split into 4. If the analyst tries to create more areas, most probably next one will be numbered as 2 NOT 1. This problem will be avoided if the following concept used.</custom-spacing>
         <li><b>Compress the numbers</b><br>
                     <custom-process>Preprocessor> Numbering Controls> Compress Numbers …> ALL</custom-process>
         <li><b>Define the Type of Element</b><br>
                     <custom-process>Preprocessor> Element Type> Add/Edit/Delete...> Add...> Solid> Quad 4 node 182</custom-process><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image59.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image60.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing>  
                     <custom-spacing>For this problem use the PLANE182 (plane stress, plane strain or generalized plane strain) element. It is defined by four nodes having two degrees of freedom at each node: translations in the nodal x and y directions.</custom-spacing>
         <li><b>Select Plane Stress with Thickness</b><br>
                     <custom-spacing>In the Element Types window, select ‘Options’... and in Element behavior select ‘Plane strs w/thk’</custom-spacing>
@@ -1039,7 +1094,10 @@
                     <custom-process>Preprocessor > Meshing > Mesh > Areas > Pick All</custom-process><br>
                     <custom-spacing>The mesh then appears as shown below.</custom-spacing>
     </ol>
-            <custom-spacing><b>II. Merging Objects Method</b></custom-spacing>
+    <custom-spacing><div class="container-1">
+        <span><img src="image56.jpg" alt="image" width="250px"></span>
+    </div></custom-spacing>         
+    <custom-spacing><b>II. Merging Objects Method</b></custom-spacing>
             <ol>
                 <li><b>Clear the memory and start a new model</b><br>
                     <custom-process>Utility Menu> File> Clear & Start New ...</custom-process>
@@ -1077,11 +1135,17 @@
                     <custom-spacing>Set No. of element divisions to 2 to obtain the desired mesh.</custom-spacing>
                 <li><b>Mesh the area</b><br>
                     <custom-process>Preprocessor> Meshing> Mesh> Areas> Pick All</custom-process>
-                <li><b>Mirror the geometry</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image61.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Mirror the geometry</b><br>
                     <custom-spacing>Create local coord system to mirror geom.</custom-spacing><br>
                     <custom-process>Utility Menu> WorkPlane> Local Coordinate Systems> Create Local CS> At specified Loc</custom-process><br>
                     <custom-spacing>First mirror the geometry about the diagonal from node 2 to 4. Click on the bottom right node (bottom corner) and select 'OK'</custom-spacing><br>
                     <custom-spacing>As shown below, create a coordinate system moved 50 mm along X</custom-spacing><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image62.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                     <custom-spacing>Next, mirror the geometry. Select:</custom-spacing><br>
                     <custom-process>Preprocessor> Modeling> Reflect> Areas> Pick All</custom-process><br>
                     <custom-spacing>In the window that appears select Y-Z plane X and click 'OK'. This will mirror the geometry about the Y-Z plane</custom-spacing><br>
@@ -1091,7 +1155,10 @@
                 <li><b>Plot Elements</b><br>
                     <custom-process>Utility Menu> Plot> Elements</custom-process><br>
                     <custom-spacing>The mesh now appears as follows:</custom-spacing>
-                <li><b>Merge duplicate nodes/elements</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image56.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Merge duplicate nodes/elements</b><br>
                     <custom-process>Preprocessor> Numbering Ctrls> Merge Items> All</custom-process>
             </ol>
             
@@ -1150,9 +1217,15 @@
                 <li><b>Mesh the area</b><br>
                     <custom-process>Preprocessor> Meshing> Mesh> Areas> Pick All</custom-process><br>
                     <custom-spacing>And again the desired mesh is obtained:</custom-spacing>
-            </ol>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image56.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                </ol>
             
-            <custom-spacing><b>W6:</b> Create pattern shown below and mesh the same.</custom-spacing><br>
+            <custom-spacing style="color: red;"><b>W6:</b> Create pattern shown below and mesh the same.</custom-spacing><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image63.jpg" alt="image" width="250px"></span>
+            </div></custom-spacing> 
             <custom-spacing><b>Sol:</b></custom-spacing>
             <ol>
                 <li><b>Turn ON area numbers</b><br>
@@ -1163,19 +1236,34 @@
                 <li><b>Create a circle on lower left corner of the rectangle.</b><br>
                     <custom-process>Preprocessor> Modeling> Create> Areas> Circle> Solid Circle</custom-process><br>
                     <custom-spacing>Enter WP X=0, WP Y=0) and Radius=1</custom-spacing>
-                <li><b>Repeat circle creation</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image64.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Repeat circle creation</b><br>
                     <custom-spacing>Enter center WP X=0, WP Y=5 and Radius=2</custom-spacing>
                 <li><b>Subtract circles from rectangle</b><br>
                     <custom-process>Preprocessor> Modeling> Operate>Subtract> Areas</custom-process><br>
                     <custom-spacing>Pick base area, pick rectangle, click ‘OK’</custom-spacing><br>
                     <custom-spacing>Pick areas to be subtracted, pick the two circles, click ‘OK’</custom-spacing>
-                <li><b>Mesh the pattern</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image65.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image63.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing>  
+                    <li><b>Mesh the pattern</b><br>
                     <custom-process>Element Type> Add/Edit/Delete> Add> Solid> Quad 4 node 182</custom-process><br>
                     <custom-process>Meshing> Mesh> Areas> Free</custom-process><br>
                     <custom-spacing>Pick the area.</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image66.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
             </ol>
             
-            <custom-spacing><b>W7:</b> Model a chain link shown below and mesh the same.</custom-spacing><br>
+            <custom-spacing style="color: red;"><b>W7:</b> Model a chain link shown below and mesh the same.</custom-spacing><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image67.jpg" alt="image" width="300px"></span>
+            </div></custom-spacing> 
             <custom-spacing><b>Sol:</b> Since the object is symmetric, first draw one quadrant of the chain and reflect twice to get the full object.</custom-spacing>
             <ol>
                 <li><b>Draw the rectangle.</b><br>
@@ -1184,7 +1272,10 @@
                 <li><b>Now draw the partial annulus</b><br>
                     <custom-process>Main Menu> Modeling> Areas> Circle> Partial Annulus</custom-process><br>
                     <custom-spacing>X=30, Y=0, Rad-1=30, Theta-1=0, Rad-2=60, Theta-2=90</custom-spacing>
-                <li><b>Mesh the rectangle</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image68.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Mesh the rectangle</b><br>
                     <custom-process>Main Menu> Meshing> Size Contrls> ManualSize> Picked Lines</custom-process><br>
                     <custom-spacing>Select vertical lines of the rectangle. Click OK</custom-spacing><br>
                     <custom-spacing>Set No. of element divisions=3</custom-spacing><br>
@@ -1200,9 +1291,16 @@
                     <custom-spacing>Select the two areas. Under Reflect Areas Select YZ plane X under Reflect Areas</custom-spacing>
                 <li><b>Repeat reflect operation.</b><br>
                     <custom-spacing>Select areas, OK. Select XZ plane y under Reflect Areas.</custom-spacing>
-            </ol>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image69.jpg" alt="image" width="250px"></span>
+                        <span><img src="image70.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                </ol>
             
-            <custom-spacing><b>W8:</b> Model a spanner shown below and mesh the same.</custom-spacing><br>
+            <custom-spacing style="color: red;"><b>W8:</b> Model a spanner shown below and mesh the same.</custom-spacing><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image71.jpg" alt="image" width="250px"></span>
+            </div></custom-spacing> 
             <custom-spacing><b>Sol:</b></custom-spacing>
             <ol>
                 <li><b>Turn ON area numbers</b><br>
@@ -1210,15 +1308,24 @@
                 <li><b>Create the base rectangle</b><br>
                     <custom-process>Preprocessor> Modeling> Create> Areas> Rectangle> By 2Corners</custom-process><br>
                     <custom-spacing>Enter WP X=0, WP Y=0, Width=150 and Height=50</custom-spacing>
-                <li><b>Create a circle with center at the mid-point of the left side of the rectangle.</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image72.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Create a circle with center at the mid-point of the left side of the rectangle.</b><br>
                     <custom-process>Preprocessor> Modeling> Create> Areas> Circle> Solid Circle</custom-process><br>
                     <custom-spacing>Enter WP X=0, WP Y=25, and Radius=25</custom-spacing>
                 <li><b>Draw a circle with center at mid-point of the right side.</b><br>
                     <custom-spacing>Enter WP X=150, WP Y=25 and Radius=50</custom-spacing>
-                <li><b>Add circles to rectangle</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image73.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Add circles to rectangle</b><br>
                     <custom-process>Preprocessor> Modeling> Operate> Add> Areas</custom-process><br>
                     <custom-spacing>Pick all areas, then ‘OK’.</custom-spacing>
-                <li><b>Create a circle at the mid-point of the left side of the rectangle.</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image74.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Create a circle at the mid-point of the left side of the rectangle.</b><br>
                     <custom-process>Preprocessor> Modeling> Create> Areas> Circle> Solid Circle</custom-process><br>
                     <custom-spacing>Enter WP X=0, WP Y=25 and Radius=10</custom-spacing>
                 <li><b>Create a hexagon at the mid-point of the bigger circle.</b><br>
@@ -1231,9 +1338,15 @@
                 <li><b>Mesh the model</b><br>
                     <custom-process>Meshing> Mesh> Areas> Mapped> 3 or 4 sided</custom-process><br>
                     <custom-spacing>Pick the area</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image75.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
             </ol>
             
-            <custom-spacing><b>W9:</b> Build a solid 2-D model of an automobile connecting rod using bottom-up modeling technique. Mesh the 2-D connecting rod. Then extrude the area with the mesh to create a 3-D mesh.</custom-spacing><br>
+            <custom-spacing style="color: red;"><b>W9:</b> Build a solid 2-D model of an automobile connecting rod using bottom-up modeling technique. Mesh the 2-D connecting rod. Then extrude the area with the mesh to create a 3-D mesh.</custom-spacing><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image76.png" alt="image" width="300px"></span>
+            </div></custom-spacing> 
             <custom-spacing><b>Sol:</b></custom-spacing>
             <ol>
                 <li><b>Enter ANSYS in the working directory using ‘C-Rod-2D’ as the jobname.</b>
@@ -1248,7 +1361,7 @@
                     <custom-process>Main Menu> Preprocessor> Modeling Create> Areas> Rectangle> By Dimensions ...</custom-process><br>
                     <custom-spacing>X1 = -0.3, X2 = 0.3, Y1 = 1.2, Y2 = 1.8</custom-spacing><br>
                     <custom-spacing>X1 = -1.8, X2 = -1.2, Y1 = 0, Y2 = 0.3</custom-spacing>
-                <li><b>Offset working plane to XYZ location (X=6.5)</b><br>
+                    <li><b>Offset working plane to XYZ location (X=6.5)</b><br>
                     <custom-process>Utility Menu> WorkPlane> Offset WP to> XYZ Locations +</custom-process><br>
                     <custom-spacing>Enter 6.5 in the ANSYS Input window</custom-spacing>
                 <li><b>Set the active coordinate system to be the working plane coordinate system</b><br>
@@ -1257,9 +1370,15 @@
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Areas> Circle> By Dimensions ...</custom-process><br>
                     <custom-spacing>RAD1 = 0.7, RAD2 = 0.4, THETA1 = 0, THETA2 = 180</custom-spacing><br>
                     <custom-spacing>Next, set THETA2 = 135</custom-spacing>
-                <li><b>Issue separate Boolean overlaps on each area group</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image77.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Issue separate Boolean overlaps on each area group</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Overlap> Areas +</custom-process><br>
                     <custom-spacing>First select the left group of areas</custom-spacing><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image78.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                     <custom-spacing>Next, select the right group of areas</custom-spacing>
                 <li><b>Set the active coordinate system to be Global Cartesian</b><br>
                     <custom-process>Utility Menu> WorkPlane> Change Active CS to> Global Cartesian</custom-process>
@@ -1272,14 +1391,26 @@
                 <li><b>Create a single line from a spline fit to a series of keypoints</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Lines> Splines> With Options> Spline thru KPs +</custom-process><br>
                     <custom-spacing>Pick, the six keypoints as shown in the graphics window below</custom-spacing><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image79.png" alt="image" width="400px"></span>
+                    </div></custom-spacing> 
                     <custom-spacing>XV1 = 1 (radius at keypoint 1 in Global Cylindrical coordinate system)</custom-spacing><br>
                     <custom-spacing>YV1 = 135 (theta at keypoint 1 in Global Cylindrical coordinate system)</custom-spacing><br>
                     <custom-spacing>XV6 = 1 (radius at keypoint 6 in Global Cylindrical coordinate system)</custom-spacing><br>
                     <custom-spacing>YV6 = 45 (theta at keypoint 6 in Global Cylindrical coordinate system)</custom-spacing><br>
                     <custom-spacing>Click ‘OK’.</custom-spacing>
-                <li><b>Create a straight line between keypoints 5 and 18</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image80.jpg" alt="image" width="400px"></span>
+                    </div></custom-spacing> 
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image81.jpg" alt="image" width="400px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Create a straight line between keypoints 5 and 18</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Lines> Lines> Straight Line +</custom-process><br>
                     <custom-spacing>Pick the two keypoints as shown in the graphics window below</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image82.jpg" alt="image" width="400px"></span>
+                    </div></custom-spacing> 
                 <li><b>Turn line numbering on and plot lines</b><br>
                     <custom-process>Utility Menu> PlotCtrls> Numbering ...</custom-process><br>
                     <custom-spacing>Set Line numbers ON</custom-spacing><br>
@@ -1287,6 +1418,9 @@
                 <li><b>Create a new area bounded by previously defined lines 6, 1, 7, 25</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Areas> Arbitrary> By Lines +</custom-process><br>
                     <custom-spacing>Pick the four lines (6, 1, 7, and 25)</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image83.jpg" alt="image" width="400px"></span>
+                    </div></custom-spacing> 
                 <li><b>Zoom in on the left portion of the connecting rod</b><br>
                     <custom-process>Utility Menu> PlotCtrls> Pan, Zoom, Rotate …</custom-process><br>
                     <custom-spacing>Box Zoom</custom-spacing>
@@ -1295,12 +1429,18 @@
                     <custom-spacing>Pick lines 36 and 40, RAD =0.25</custom-spacing><br>
                     <custom-spacing>Pick lines 40 and 31, pick lines 30 and 39</custom-spacing><br>
                     <custom-process>Utility Menu> Plot> Lines</custom-process>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image84.jpg" alt="image" width="250px"></span>
+                    </div></custom-spacing> 
                 <li><b>Create three new areas bounded by the previously defined fillet lines</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Areas> Arbitrary> By Lines+</custom-process><br>
                     <custom-spacing>Pick lines 12, 10, and 13</custom-spacing><br>
                     <custom-spacing>Pick lines 17, 15, and 19</custom-spacing><br>
                     <custom-spacing>Pick lines 23, 21, and 24</custom-spacing><br>
                     <custom-process>Utility Menu> Plot> Areas</custom-process>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image85.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                 <li><b>Add all areas together to form one single area</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Operate> Add> Areas +</custom-process><br>
                     <custom-spacing>Pick All</custom-spacing>
@@ -1316,11 +1456,17 @@
                 <li><b>Reflect the area about the X-Z plane (in Y direction)</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Reflect> Areas +</custom-process><br>
                     <custom-spacing>Pick All. Select ‘X-Z plane’.</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image86.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                 <li><b>Add all areas together to form one single area</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Operate> Add> Areas +</custom-process><br>
                     <custom-spacing>Pick All</custom-spacing>
                 <li><b>Turn working plane off</b><br>
                     <custom-process>Utility Menu> WorkPlane> Display Working Plane</custom-process>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image87.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                 <li><b>Save</b><br>
                     <custom-spacing>Pick the ‘SAVE_DB’ button in the Toolbar</custom-spacing>
             </ol>
@@ -1335,7 +1481,10 @@
                     <custom-process>Main Menu> Preprocessor> MeshTool …</custom-process><br>
                     <custom-spacing>Pick ‘Set’ under Size Controls: Global</custom-spacing><br>
                     <custom-spacing>SIZE = 0.2, OK, Mesh, Pick All</custom-spacing>
-                <li><b>Save the meshed model</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image88.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Save the meshed model</b><br>
                     <custom-process>Utility Menu> File> Save as …</custom-process><br>
                     <custom-spacing>Enter ‘C-Rod-2D-Mesh-Quad.db’ as the database name</custom-spacing>
                 <li><b>Extrude the meshed area along its normal to create a 3D brick mesh model</b><br>
@@ -1350,6 +1499,9 @@
                 <li><b>Change to isometric view</b><br>
                     <custom-process>Utility Menu> PlotCtrls> Pan, Zoom, Rotate …</custom-process><br>
                     <custom-spacing>ISO</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image89.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                 <li><b>Save the meshed model</b><br>
                     <custom-process>Utility Menu> File> Save as …</custom-process><br>
                     <custom-spacing>Enter ‘C-Rod-3D-Mesh-Brick.db’ as the database name</custom-spacing><br>
@@ -1371,8 +1523,11 @@
                     <custom-spacing>Enter ‘C-Rod-Mesh-Sweep.db’ as the database name</custom-spacing>
             </ol>
             
-            <sub-heading>3.11.3 3-D</sub-heading><br>
-            <custom-spacing><b>W10:</b> Model and mesh the segment of a cylinder shown below. Draw a rectangular block at the bottom of the partial cylinder. Glue the two objects and mesh the objects.</custom-spacing><br>
+            <sub-heading style="color: green;">3.11.3 3-D</sub-heading><br>
+            <custom-spacing style="color: red;"><b>W10:</b> Model and mesh the segment of a cylinder shown below. Draw a rectangular block at the bottom of the partial cylinder. Glue the two objects and mesh the objects.</custom-spacing><br>
+            <custom-spacing><div class="container-1">
+                <span><img src="image90.jpg" alt="image" width="300px"></span>
+            </div></custom-spacing> 
             <custom-spacing><b>Sol:</b></custom-spacing>
             <ol>
                 <li><b>Create the partial cylinder</b><br>
@@ -1383,6 +1538,9 @@
                     <custom-process>Element Type> Add/Edit/Delete> Add> Solid> Brick 8 node 185</custom-process><br>
                     <custom-process>Meshing> Mesh> Volumes> Mapped> 4 to 6 sided</custom-process><br>
                     <custom-spacing>Pick the volume shown</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image91.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                 <li><b>If a specific number of divisions is required along an edge of one of the 2D or 3D regions described above, go first</b><br>
                     <custom-process>Meshing> Size Cntrls> Manual Size> Picked Lines (or All Lines)</custom-process><br>
                     <custom-spacing>Set the element edge length or number of divisions and then pick the lines to be divided.</custom-spacing>
@@ -1393,9 +1551,16 @@
                     <custom-process>MainMenu> Preprocessor> Modeling> Operate> Booleans> Glue> Volumes> PickAll</custom-process><br>
                     <custom-process>Meshing> Mesh> Volumes> Mapped> 4 to 6 sided</custom-process><br>
                     <custom-spacing>Pick the two volumes shown</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image92.jpg" alt="image" width="300px"></span>
+                        <span><img src="image93.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
             </ol>
             
-            <custom-spacing><b>W11:</b> Build and mesh a half symmetry solid model of the pillow block shown below. Use both free meshing and sweep meshing techniques.</custom-spacing>
+            <custom-spacing style="color: red;"><b>W11:</b> Build and mesh a half symmetry solid model of the pillow block shown below. Use both free meshing and sweep meshing techniques.</custom-spacing>
+            <custom-spacing><div class="container-1">
+                <span><img src="image94.jpg" alt="image" width="300px"></span>
+            </div></custom-spacing> 
             <ol>
                 <li><b>Enter ANSYS. Enter ‘Solid Bearing’ as the jobname.</b>
                 <li><b>Switch to isometric view</b><br>
@@ -1406,6 +1571,9 @@
                     <custom-spacing>X1=0, X2 = 60, Y1 = 20, Y2 = 45, Z1 = 0, Z2 = -40, OK</custom-spacing>
             </ol>
             <ol start="4">
+                <custom-spacing><div class="container-1">
+                    <span><img src="image95.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing> 
                 <li><b>Offset working plane to location X=30, Y=20, Z=-85</b><br>
                     <custom-process>Utility Menu> WorkPlane> Offset WP by Increments …</custom-process><br>
                     <custom-spacing>Set X,Y,Z Offsets = 30,20,-85</custom-spacing><br>
@@ -1417,7 +1585,10 @@
                     <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Subtract> Volumes +</custom-process><br>
                     <custom-spacing>Pick the base volume (Vol. 1), then ‘OK’</custom-spacing><br>
                     <custom-spacing>Pick the cylinder volume (Vol. 3), then ‘OK’</custom-spacing>
-                <li><b>Align working plane with the Global Cartesian origin</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image96.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Align working plane with the Global Cartesian origin</b><br>
                     <custom-process>Utility Menu> WorkPlane> Align WP with> Global Cartesian</custom-process>
                 <li><b>Offset working plane to location X=0, Y=45, Z=0</b><br>
                     <custom-process>Utility Menu> WorkPlane> Offset WP by Increments …</custom-process><br>
@@ -1426,23 +1597,32 @@
                 <li><b>Create the arch of the solid bearing</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Volumes> Cylinder> Partial Cylinder +</custom-process><br>
                     <custom-spacing>WP X = 0, WP Y = 0, Rad-1 = 0, Theta-1 = 90, Rad-2 = 40, Theta-2 = 180, Depth = -60, click ‘OK’</custom-spacing>
-                <li><b>Create cylinder for the through hole in the solid bearing:</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image97.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Create cylinder for the through hole in the solid bearing:</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Volumes> Cylinder> Solid Cylinder +</custom-process><br>
                     <custom-spacing>WP X = 0, WP Y = 0, Radius = 20, Depth = -60, then ‘Apply’</custom-spacing>
-                <li><b>Subtract the solid cylinder to form the arch and base</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image98.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Subtract the solid cylinder to form the arch and base</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans-Subtract> Volumes +</custom-process><br>
                     <custom-spacing>Pick the two volumes that form the base and the arch of the solid bearing, ‘Apply’</custom-spacing><br>
                     <custom-spacing>Pick the counterbore cylinder, ‘Apply’</custom-spacing><br>
                     <custom-spacing>Pick the same two base volumes, ‘Apply’</custom-spacing><br>
                     <custom-spacing>Pick the through-hole cylinder, ‘OK’</custom-spacing>
-                <li><b>Offset working plane to location X=0, Y=45, Z=0</b><br>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image99.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
+                    <li><b>Offset working plane to location X=0, Y=45, Z=0</b><br>
                     <custom-process>Utility Menu> WorkPlane> Offset WP by Increments …</custom-process><br>
                     <custom-spacing>Set X,Y,Z Offsets = 0,40,-30</custom-spacing><br>
                     <custom-spacing>Set XY, YZ, ZX Angles = 0, -90, 0, then ‘OK’</custom-spacing>
-                <li><b>Create cylinder for the through hole in the solid bearing:</b><br>
+                    <li><b>Create cylinder for the through hole in the solid bearing:</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Create> Volumes> Cylinder> Solid Cylinder +</custom-process><br>
                     <custom-spacing>WP X = 0, WP Y = 0, Radius = 1.5, Depth = -20, then ‘Apply’</custom-spacing>
-                <li><b>Subtract the solid cylinder to form the arch and base</b><br>
+                    <li><b>Subtract the solid cylinder to form the arch and base</b><br>
                     <custom-process>Main Menu> Preprocessor> Modeling> Operate> Booleans> Subtract> Volumes +</custom-process><br>
                     <custom-spacing>Pick the volume that forms the arch of the solid bearing, Apply</custom-spacing><br>
                     <custom-spacing>Pick the oil hole cylinder, ‘Apply’</custom-spacing>
@@ -1457,6 +1637,9 @@
                     <custom-spacing>Set Volume numbers on, then OK</custom-spacing>
                 <li><b>Save</b><br>
                     <custom-spacing>Pick the ‘SAVE_DB’ button in the Toolbar, OK</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image100.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                 <li><b>Specify the element type to be SOLID186</b><br>
                     <custom-process>Main Menu> Preprocessor> Element Type> Add/Edit/Delete …</custom-process><br>
                     <custom-spacing>Add ...</custom-spacing><br>
@@ -1464,6 +1647,9 @@
                 <li><b>Activate Smartsize meshing and free mesh the model with tetrahedral elements:</b><br>
                     <custom-process>Main Menu> Preprocessor> MeshTool …</custom-process><br>
                     <custom-spacing>Activate ‘Smart Size’. Set Smart Size level to 4, ‘Mesh’, ‘Pick All’, ‘Close’</custom-spacing>
+                    <custom-spacing><div class="container-1">
+                        <span><img src="image101.jpg" alt="image" width="300px"></span>
+                    </div></custom-spacing> 
                 <li><b>Save the meshed model</b><br>
                     <custom-process>Utility Menu > File > Save as …</custom-process><br>
                     <custom-spacing>Enter ‘P-Block-Mesh-Free.db’ as the database name, then ‘OK’</custom-spacing>
