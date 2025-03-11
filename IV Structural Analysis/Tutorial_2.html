@@ -183,8 +183,11 @@
         <custom-spacing>Use <custom-process>Main Menu> General Postproc> Plot Results> Vector Plot> Predefined</custom-process> to display vectors and <custom-process>Main Menu> General Postproc> List Results> Vector Data</custom-process> to view vector listings.</custom-spacing>
         <custom-spacing>Use <custom-process>Main Menu> General Postproc> List Results> solution option</custom-process> to produce tabular listings.</custom-spacing>
         
-        <sub-heading>4.1. 1-D Problems</sub-heading>
-        <custom-spacing><b>W1:</b> Consider a 2m long steel bar of 50mm<sup>2</sup> cross sectional area as shown below. Use two element mesh to model this problem. Find nodal displacements, element stresses and reaction. Take Young’s modulus, E=2x10<sup>5</sup> N/mm<sup>2</sup>, load=100N.</custom-spacing><br>
+        <sub-heading style="color: green;">4.1. 1-D Problems</sub-heading>
+        <custom-spacing style="color: red;"><b>W1:</b> Consider a 2m long steel bar of 50mm<sup>2</sup> cross sectional area as shown below. Use two element mesh to model this problem. Find nodal displacements, element stresses and reaction. Take Young’s modulus, E=2x10<sup>5</sup> N/mm<sup>2</sup>, load=100N.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image1.jpg" alt="image" width="450px" height="180"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> Length of bar=2000mm, Cross sectional area=50mm<sup>2</sup>, E=2x10<sup>5</sup> N/mm<sup>2</sup>, Load=100N</custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -218,7 +221,9 @@
                 <custom-process>Solution> Loads> Apply> Structural> Force/Moment> On Nodes</custom-process><br>
                 <custom-spacing>Pick node 3, then ‘OK’ in the picking menu, choose ‘FX’ as the direction of the force, and enter 100 for the force value. Click on ‘OK’.</custom-spacing>
         </ol>
-        
+        <custom-spacing><div class="container-1">
+            <span><img src="image2.jpg" alt="image" width="250px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Solution</b></custom-spacing>
         <ol>
             <li><b>Solve the problem</b><br>
@@ -231,9 +236,15 @@
             <li><b>Plot the deformed shape</b><br>
                 <custom-process>General Postproc> Plot Results> Deformed Shape</custom-process><br>
                 <custom-spacing>Choose ‘Def + undeformed’, then ‘OK’</custom-spacing>
-            <li><b>List reaction forces</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image3.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
+                <li><b>List reaction forces</b><br>
                 <custom-process>General Postproc> List Results> Reaction Solution</custom-process><br>
                 <custom-spacing>Click on ‘All struc forc F’, and ‘OK’</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image4.jpg" alt="image" width="400px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Print the information in the Listing Box, by clicking, in that box, on File> Print. Or else, just write the information down.</custom-spacing>
             <li><b>List a summary, which includes the axial force and stress in each element</b><br>
                 <custom-process>General Postproc> List Results> Element Solution> LineElem results> Structural ELEM</custom-process><br>
@@ -245,9 +256,12 @@
                 <custom-process>Quit> Save Everything> OK</custom-process>
         </ol>
         
-        <sub-heading>4.2. 2-D Problems</sub-heading>
-        <sub-heading>4.2.1. Truss</sub-heading>
-        <custom-spacing><b>W2:</b> A simple truss is shown below. Modulus for material is 200GPa, A=500mm<sup>2</sup>, force at node 2 in the +y direction of 1,000N. Find the displacements and stresses.</custom-spacing><br>
+        <sub-heading style="color: green;">4.2. 2-D Problems</sub-heading>
+        <br><sub-heading style="color: green;">4.2.1. Truss</sub-heading>
+        <custom-spacing style="color: red;"><b>W2:</b> A simple truss is shown below. Modulus for material is 200GPa, A=500mm<sup>2</sup>, force at node 2 in the +y direction of 1,000N. Find the displacements and stresses.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image5.jpg" alt="image" width="250px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> E=2e5N/mm<sup>2</sup>, A=500mm<sup>2</sup>, F=1000N</custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -294,21 +308,36 @@
             <li><b>Plot the deformed shape</b><br>
                 <custom-process>General Postproc> Plot Results> Deformed Shape</custom-process><br>
                 <custom-spacing>Choose ‘Def + undeformed’, then ‘OK’.</custom-spacing>
-            <li><b>List reaction forces</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image6.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+                <li><b>List reaction forces</b><br>
                 <custom-process>General Postproc> List Results> Reaction Solution</custom-process><br>
                 <custom-spacing>Click on ‘All struc forc F’, and ‘OK’.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image7.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Print the information in the Listing Box, by clicking, in that box, on File> Print. Or else, just write the information down.</custom-spacing>
             <li><b>List a summary, which includes the axial force and stress in each element</b><br>
                 <custom-process>General Postproc> List Results> Element Solution> LineElem results> Structural ELEM</custom-process><br>
                 <custom-spacing>Click ‘OK’, and a summary for each element is printed, including the node numbers, from which the corresponding truss member can be identified, and also the axial force (MFORX), and the axial stress (SAXL). Record or print, this information.</custom-spacing>
-            <li><b>List the y direction deflections for each node.</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image8.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
+                <li>List the y direction deflections for each node.<br>
                 <custom-process>General Postproc> List Results> Nodal Solution> DOF Solution> Y-Component of displacement</custom-process><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image9.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Click ‘OK’. Again, record or print, this information.</custom-spacing>
-            <li><b>Exit ANSYS</b><br>
+            <li>Exit ANSYS<br>
                 <custom-process>Quit> Save Everything> OK</custom-process>
         </ol>
         
-        <custom-spacing><b>W3:</b> Find the displacements and stresses in the truss shown below. Consider area=300mm<sup>2</sup>, E=200GPa.</custom-spacing><br>
+        <custom-spacing style="color: red;"><b>W3:</b> Find the displacements and stresses in the truss shown below. Consider area=300mm<sup>2</sup>, E=200GPa.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image10.jpg" alt="image" width="250px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> A=300mm<sup>2</sup>, E=2e5N/mm<sup>2</sup>, F=5,000N</custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -357,12 +386,21 @@
             <li><b>Plot the deformed shape</b><br>
                 <custom-process>General Postproc> Plot Results> Deformed Shape</custom-process><br>
                 <custom-spacing>Choose ‘Def + undeformed’, then ‘OK’.</custom-spacing>
-            <li><b>List reaction forces</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image11.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+                <li><b>List reaction forces</b><br>
                 <custom-process>General Postproc> List Results> Reaction Solution</custom-process><br>
                 <custom-spacing>Click on ‘All items’, and ‘OK’.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image12.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Print the information in the Listing Box, by clicking, in that box, on ‘File > Print’. Or else, just write the information down.</custom-spacing>
             <li><b>List a summary, which includes the axial force and stress in each element.</b><br>
                 <custom-process>General Postproc> List Results> Element Solution> Favourites> Element Solution></custom-process><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image13.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Click ‘OK’, and a summary for each element is printed, including the node numbers, from which the corresponding truss member can be identified, Record or print, this information.</custom-spacing>
             <li><b>List the x and y direction deflections for each node:</b><br>
                 <custom-process>General Postproc> List Results> Nodal Solution> DOF Solution> Displacement vector sum</custom-process><br>
@@ -371,8 +409,10 @@
                 <custom-process>Quit> Save Everything> OK</custom-process>
         </ol>
         
-        <custom-spacing><b>W4:</b> Model and analyze the following simple truss structure geometry, loading, and boundary conditions. The model consists of three elements connected by three nodes. F=5,000N. Use ANSYS Link180 elements.</custom-spacing>
-        <custom-spacing><b>W4:</b> Model and analyze the following simple truss structure geometry, loading, and boundary conditions. The model consists of three elements connected by three nodes. F=5,000N. Use ANSYS Link180 elements.</custom-spacing><br>
+        <custom-spacing style="color: red;"><b>W4:</b> Model and analyze the following simple truss structure geometry, loading, and boundary conditions. The model consists of three elements connected by three nodes. F=5,000N. Use ANSYS Link180 elements.</custom-spacing>
+        <custom-spacing><div class="container-1">
+            <span><img src="image14.jpg" alt="image" width="250px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> A=300mm<sup>2</sup>, E=7e4, F=5,000N</custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -419,7 +459,10 @@
             <li><b>Plot the deformed shape</b><br>
                 <custom-process>General Postproc> Plot Results> Deformed Shape</custom-process><br>
                 <custom-spacing>Choose ‘Def + undeformed’, then ‘OK’.</custom-spacing>
-            <li><b>List reaction forces</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image15.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+                <li><b>List reaction forces</b><br>
                 <custom-process>General Postproc> List Results> Reaction Solution</custom-process><br>
                 <custom-spacing>Click on ‘All struc forc F’, and ‘OK’.</custom-spacing><br>
                 <custom-spacing>Print the information in the Listing Box, by clicking, in that box, on ‘File > Print’. Or else, just write the information down.</custom-spacing>
@@ -433,7 +476,10 @@
                 <custom-process>Quit> Save Everything> OK</custom-process>
         </ol>
         
-        <custom-spacing><b>W5:</b> Model and analyze the truss shown below. Cross-sectional area of truss members = 3.0E-4m<sup>2</sup>; Modulus of Elasticity = 207GPa.</custom-spacing><br>
+        <custom-spacing style="color: red;"><b>W5:</b> Model and analyze the truss shown below. Cross-sectional area of truss members = 3.0E-4m<sup>2</sup>; Modulus of Elasticity = 207GPa.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image16.jpg" alt="image" width="300px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> E=2.07e11N/m<sup>2</sup>, Area=3e-4m<sup>2</sup></custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -498,9 +544,15 @@
             <li><b>Plot the deformed shape</b><br>
                 <custom-process>General Postproc> Plot Results> Deformed Shape</custom-process><br>
                 <custom-spacing>Choose ‘Def + undeformed’, then ‘OK’.</custom-spacing>
-            <li><b>List reaction forces</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image17.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
+                <li><b>List reaction forces</b><br>
                 <custom-process>General Postproc> List Results> Reaction Solution</custom-process><br>
                 <custom-spacing>Click on ‘All struc forc F’, and ‘OK’.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image18.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Print the information in the Listing Box, by clicking, in that box, on ‘File > Print’. Or else, just write the information down.</custom-spacing>
             <li><b>List a summary, which includes the axial force and stress in each element:</b><br>
                 <custom-process>General Postproc> List Results> Element Solution> Favourites> Element Solution></custom-process><br>
@@ -512,7 +564,10 @@
                 <custom-process>Quit> Save Everything> OK</custom-process>
         </ol>
         
-        <custom-spacing><b>W6:</b> A tower is made up of trusses. The four trusses at the top are each 2m in length. The cross section of each of the truss members is 6.25e-3sq.m. Assume the structure is made of steel with modulus of elasticity E=200GPa. The tower is constrained along X and Y directions at the bottom left corner, and along Y direction at the bottom right corner. The tower is loaded at the top. The load is in vertical direction only, and its magnitude is 4000N. Determine deflection at each joint. Determine stress in each member. Determine reaction forces at the base.</custom-spacing><br>
+        <custom-spacing style="color: red;"><b>W6:</b> A tower is made up of trusses. The four trusses at the top are each 2m in length. The cross section of each of the truss members is 6.25e-3sq.m. Assume the structure is made of steel with modulus of elasticity E=200GPa. The tower is constrained along X and Y directions at the bottom left corner, and along Y direction at the bottom right corner. The tower is loaded at the top. The load is in vertical direction only, and its magnitude is 4000N. Determine deflection at each joint. Determine stress in each member. Determine reaction forces at the base.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image19.jpg" alt="image" width="200px" height="300"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> Height of each truss=2m, cross sectional area=6.25e-3sq.m., E=2e11N/m<sup>2</sup>, Load=-4000N</custom-spacing><br>
         <custom-spacing><b>Sol:</b> A truss is a structural element that experiences loading only in the axial direction. In this example a 2-D Truss element will be used. A power transmission tower is a common example of a structure that is made up of only truss members. These towers are actually 3-D structures, but for the sake of simplicity a cross-sectional face of the tower will be taken. The tower is mainly subjected to loading in the vertical direction due to the weight of the cables. Also it is subjected to forces due to wind. In this example only loading due to the weight of the cables, which is in the vertical direction, will be considered.</custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -526,10 +581,16 @@
                 <custom-spacing>The following window comes up. Now pick the end points of the truss.</custom-spacing><br>
                 <custom-spacing>Select the keypoints on the workplane grid. The keypoints should look like this.</custom-spacing><br>
                 <custom-spacing>If the complete workplane cannot be seen then go to <custom-process>Utility Menu> PlotCntrls> Pan Zoom Rotate</custom-process> and zoom out to see the entire workplane</custom-spacing>
-            <li><b>Now create lines connecting the keypoints</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image20.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+                <li><b>Now create lines connecting the keypoints</b><br>
                 <custom-process>Preprocessor> Modeling> Create> Lines> Lines> Straight Line</custom-process><br>
                 <custom-spacing>Create lines by picking keypoints to make the figure shown below</custom-spacing>
-            <li><b>Define material properties</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image21.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+                <li><b>Define material properties</b><br>
                 <custom-process>Main Menu> Preprocessor> Material Props> Material Models</custom-process><br>
                 <custom-spacing>In the window that comes up, for Material Model 1, choose Structural> Linear> Elastic> Isotropic</custom-spacing><br>
                 <custom-spacing>Enter 1 for the Material Property Number and click ‘OK’. The following window comes up.</custom-spacing><br>
@@ -552,6 +613,9 @@
                 <custom-process>Preprocessor> Meshing> Size Cntrls> ManualSize> Lines> All Lines</custom-process><br>
                 <custom-spacing>In the menu that comes up type 1 in the field for 'Number of element divisions'.</custom-spacing><br>
                 <custom-spacing>This divides each of the lines in the figure into 1 element.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image22.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Click on ‘OK’. Now the figure is meshed, ANSYS will automatically divide each line into 1 element.</custom-spacing><br>
                 <custom-process>Preprocessor> Meshing> Mesh> lines</custom-process><br>
                 <custom-spacing>Select all the lines and click on OK in the ‘Mesh Lines’ dialog box.</custom-spacing><br>
@@ -561,6 +625,9 @@
                 <custom-spacing>The tower is constrained in the X and Y directions at the bottom left corner and in the Y direction at the bottom right corner.</custom-spacing><br>
                 <custom-process>Main Menu> Preprocessor> Loads> Define Loads> Apply> Structural> Displacement> On Keypoints</custom-process><br>
                 <custom-spacing>Select the keypoint on displacement constraints are to be applied. The following window comes up.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image23.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Select UX and UY for the bottom left corner and UY for the bottom right corner and lick OK. The default displacement value is taken to be zero.</custom-spacing>
             <li><b>Apply forces</b><br>
                 <custom-process>Main Menu> Preprocessor> Loads> Define Loads> Apply> Structural> Forces/Moment> On Nodes</custom-process><br>
@@ -585,9 +652,14 @@
                 <custom-spacing>List the stresses for each element by clicking <custom-process>Gen Postproc > List Results > Element Solution</custom-process>.</custom-spacing><br>
                 <custom-spacing>Now select LineElem Results.</custom-spacing>
         </ol>
-        
-        <sub-heading>4.2.2. Frames</sub-heading>
-        <custom-spacing><b>W7:</b> The members have a annular cross-section. The cross sections (A) of each of the truss members is 5.5e-3sqm. The structure is made of steel with modulus of elasticity, E=210GPa. All the DOFs are constrained at the bottom end. The structure is loaded at the ends of the two arms. The load is in the negative Y direction. The load value is 4000N each. Determine deflections at the points of application of load. Determine the maximum stress in the structure.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image25.jpg" alt="image" width="250px"></span>
+        </div></custom-spacing>
+        <sub-heading style="color: green;">4.2.2. Frames</sub-heading>
+        <custom-spacing style="color: red;"><b>W7:</b> The members have a annular cross-section. The cross sections (A) of each of the truss members is 5.5e-3sqm. The structure is made of steel with modulus of elasticity, E=210GPa. All the DOFs are constrained at the bottom end. The structure is loaded at the ends of the two arms. The load is in the negative Y direction. The load value is 4000N each. Determine deflections at the points of application of load. Determine the maximum stress in the structure.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image26.jpg" alt="image" width="200px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> E=210GPa, area= 5.5e-3sqm, Load = 4000N</custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -632,6 +704,9 @@
                 <custom-spacing>Click on OK in the 'Apply F/M on Nodes' window.</custom-spacing><br>
                 <custom-spacing>Enter -4000 for force.</custom-spacing><br>
                 <custom-spacing>The figure looks like this now.</custom-spacing>
+                <custom-spacing><div class="container-1">
+            <span><img src="image27.jpg" alt="image" width="200px"></span>
+        </div></custom-spacing>
         </ol>
         
         <custom-spacing><b>Solution</b></custom-spacing>
@@ -653,10 +728,19 @@
             <li><b>Plot the displacements and stress.</b><br>
                 <custom-process>General Postproc> Plot Results> Contour Plot> Element Solution</custom-process><br>
                 <custom-spacing>The following window will come up.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image28.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
                 <custom-spacing>Select a stress to be plotted and click ‘OK’. The output will be like this.</custom-spacing>
-        </ol>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image29.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+            </ol>
         
-        <custom-spacing><b>W8:</b> A shelter truss is shown below. Truss members 1-5 are made with mild steel. Modulus for steel is 200GPa, and cross sectional area=300mm<sup>2</sup>. Members 6-9 are made with aluminium. Modulus of aluminum is 70GPa and cross sectional area= 250mm<sup>2</sup>. A vertical downward force of 5000N acts at extreme right corner in the -Y direction. Find the displacements and stresses.</custom-spacing><br>
+        <custom-spacing style="color: red;"><b>W8:</b> A shelter truss is shown below. Truss members 1-5 are made with mild steel. Modulus for steel is 200GPa, and cross sectional area=300mm<sup>2</sup>. Members 6-9 are made with aluminium. Modulus of aluminum is 70GPa and cross sectional area= 250mm<sup>2</sup>. A vertical downward force of 5000N acts at extreme right corner in the -Y direction. Find the displacements and stresses.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image30.jpg" alt="image" width="250px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> E-1=2e5, R-1=300mm<sup>2</sup>, E-2=7e4, R-2=250mm<sup>2</sup>, F=-5000N</custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
@@ -715,6 +799,9 @@
             <li><b>Plot the deformed shape</b><br>
                 <custom-process>General Postproc> Plot Results> Deformed Shape</custom-process><br>
                 <custom-spacing>Choose ‘Def + undeformed’, then ‘OK’.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image31.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
                 <custom-spacing>List reaction forces</custom-spacing><br>
                 <custom-process>General Postproc> List Results> Reaction Solution</custom-process><br>
                 <custom-spacing>Click on ‘All struc forc F’, and ‘OK’.</custom-spacing><br>
@@ -729,7 +816,10 @@
                 <custom-process>Quit> Save Everything> OK</custom-process>
         </ol>
         
-        <custom-spacing><b>W10:</b> Determine the end deflection and root bending stress of a steel cantilever beam of length 250mm shown below.</custom-spacing><br>
+        <custom-spacing style="color: red;"><b>W10:</b> Determine the end deflection and root bending stress of a steel cantilever beam of length 250mm shown below.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image32.jpg" alt="image" width="500px" height="200"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> E=2e5N/mm<sup>2</sup>, µ=0.3, Length=250mm, Load=250N, Width=8mm, Height=12mm</custom-spacing>
         <custom-spacing><b>W10:</b> Determine the end deflection and root bending stress of a steel cantilever beam of length 250mm shown below.</custom-spacing><br>
         <custom-spacing><b>Data:</b> E=2e5N/mm<sup>2</sup>, µ=0.3, Length=250mm, Load=250N, Width=8mm, Height=12mm</custom-spacing><br>
@@ -771,7 +861,10 @@
                 <custom-spacing>Pick Left extreme node, then click ‘OK’ in the picking menu that has appeared. Choose ALL DOF, and use the default value of zero. Click on ‘OK’.</custom-spacing><br>
                 <custom-process>Solution > Loads > Apply> Structural> Force/Moment> On Nodes</custom-process><br>
                 <custom-spacing>Pick extreme right node , then ‘OK’ in the picking menu, choose ‘FY’ as the direction of the force, and enter ‘-250’ for the force value. Click on ‘OK’.</custom-spacing>
-            <li><b>Solve the problem.</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image33.jpg" alt="image" width="200px"></span>
+                </div></custom-spacing>
+                <li><b>Solve the problem.</b><br>
                 <custom-process>Solution> Solve> Current LS</custom-process><br>
                 <custom-spacing>Click ‘OK’ in the ‘Solve Current Load Step’ Box.</custom-spacing>
         </ol>
@@ -781,12 +874,18 @@
             <li><b>Plot the deformed shape.</b><br>
                 <custom-process>General Postproc> Plot Results> Deformed Shape</custom-process><br>
                 <custom-spacing>Choose ‘Def + undeformed’, then ‘OK’.</custom-spacing>
-            <li><b>List reaction forces.</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image34.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+                <li><b>List reaction forces.</b><br>
                 <custom-process>General Postproc> List Results> Reaction Solution</custom-process><br>
                 <custom-spacing>Use the default: ‘All items’; and click on ‘OK’.</custom-spacing>
             <li><b>List nodal displacements</b><br>
                 <custom-process>General Postproc> List Results> Nodal Solution> DOF Solution> Displacement vector sum</custom-process>
-            <li><b>Define element table items for subsequent plotting and listing of various stress results.</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image35.jpg" alt="image" width="300px"></span>
+                </div></custom-spacing>
+                <li><b>Define element table items for subsequent plotting and listing of various stress results.</b><br>
                 <custom-spacing>For line elements, such as beam elements, to generate certain stress results, define an element table, using the ETABLE command. Note that each element is defined by two end nodes, denoted by node i and node j. Node i is the first of the two nodes defined when the element was created. The form of the GUI path to define a table containing the shear force, at node i, for each element, is:</custom-spacing><br>
                 <custom-process>Main Menu> General Postproc> Element Table> Define Table> Add</custom-process><br>
                 <custom-spacing>SFy for user label, Select By sequence num and SMISC, 5, click Apply</custom-spacing><br>
@@ -795,6 +894,9 @@
                 <custom-process>General Postproc> Plot Results> Contour Plot> Line Ele Res</custom-process><br>
                 <custom-spacing>Enter LabI=SMIS5, LabJ=SMIS18</custom-spacing><br>
                 <custom-spacing>The entries in this command pertain specifically to the BEAM188 element. In the command above, ‘SFyI’ is simply a label chosen by the user. Practically any other text string could be used in this field. However, it must not have more than eight characters, and it cannot be identical to any general ANSYS predefined label. ‘SMISC’ is the appropriate item for shear force in BEAM188 elements. Also, the ‘5’ shown as the last entry is correct sequence number on the ETABLE command, assuming BEAM188 elements are used, and the user wants to store the bending stresses, at node i for each element.</custom-spacing><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image36.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
                 <custom-spacing>If the user also wants to define an element table in which the bending moment, at node j for each element is stored, the command that could be used is similar to that above. However, the user should choose a different identifying label ‘My’, and the value of the last entry for this case is ‘2 and 15’.</custom-spacing><br>
                 <custom-process>Main Menu> General Postproc> Element Table> Define Table> Add</custom-process><br>
                 <custom-spacing>BMzI for user label, Select By sequence num and SMISC, 2, click ‘Apply’</custom-spacing><br>
@@ -802,7 +904,10 @@
                 <custom-spacing>Now plot bendind moment diagram.</custom-spacing><br>
                 <custom-process>General Postproc> Plot Results> Contour Plot> Line Ele Res</custom-process><br>
                 <custom-spacing>Enter LabI=SMIS2, LabJ=SMIS15</custom-spacing>
-            <li><b>List element table results.</b><br>
+                <custom-spacing><div class="container-1">
+                    <span><img src="image37.jpg" alt="image" width="250px"></span>
+                </div></custom-spacing>
+                <li><b>List element table results.</b><br>
                 <custom-spacing>Assuming all four of the above ETABLE commands were entered, then a listing of each stored stress component can be obtained with the menu path:</custom-spacing><br>
                 <custom-process>General Postproc> List Results> Elem Table Data</custom-process><br>
                 <custom-spacing>Then, highlight the desired labels, and click on ‘OK’. The stresses corresponding to the chosen labels will be listed by element number.</custom-spacing>
@@ -816,7 +921,10 @@
                 <custom-process>Quit> Save Everything> OK</custom-process>
         </ol>
         
-        <custom-spacing><b>W11:</b> Analyze simple cantilever beam problem shown below. The beam is made with 2 different materials.</custom-spacing><br>
+        <custom-spacing style="color: red;"><b>W11:</b> Analyze simple cantilever beam problem shown below. The beam is made with 2 different materials.</custom-spacing><br>
+        <custom-spacing><div class="container-1">
+            <span><img src="image38.jpg" alt="image" width="250px"></span>
+        </div></custom-spacing>
         <custom-spacing><b>Data:</b> Width-1=10mm, Height-1=50mm, Length-1=150, E-1=.7e5N/mm<sup>2</sup>, µ-1=0.3, Width-2=15mm, Height=25mm, Length-2=300, E-2=2e5N/mm<sup>2</sup>, µ-2=0.3, F=500N</custom-spacing><br>
         <custom-spacing><b>Sol:</b></custom-spacing><br>
         <custom-spacing><b>Preprocessing</b></custom-spacing>
